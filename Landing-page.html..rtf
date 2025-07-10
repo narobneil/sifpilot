@@ -1,0 +1,191 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>SiftPilot - Email Automation Platform</title>\
+    <style>\
+        * \{ margin: 0; padding: 0; box-sizing: border-box; \}\
+        body \{ \
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
+            min-height: 100vh;\
+            color: #333;\
+        \}\
+        .container \{ \
+            max-width: 1000px; \
+            margin: 0 auto; \
+            padding: 20px;\
+        \}\
+        .header \{ \
+            background: rgba(255,255,255,0.95);\
+            backdrop-filter: blur(20px);\
+            border-radius: 20px;\
+            padding: 40px;\
+            text-align: center;\
+            margin-bottom: 30px;\
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);\
+        \}\
+        .logo \{ \
+            font-size: 3.5em; \
+            margin-bottom: 10px;\
+            background: linear-gradient(45deg, #2563eb, #7c3aed);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+            font-weight: bold;\
+        \}\
+        .tagline \{ \
+            font-size: 1.4em; \
+            color: #666;\
+            margin-bottom: 20px;\
+        \}\
+        .status-card \{\
+            background: rgba(255,255,255,0.9);\
+            border-radius: 15px;\
+            padding: 25px;\
+            margin-bottom: 30px;\
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);\
+        \}\
+        .status-title \{ \
+            color: #2563eb;\
+            font-size: 1.5em;\
+            margin-bottom: 15px;\
+            display: flex;\
+            align-items: center;\
+            gap: 10px;\
+        \}\
+        .status-item \{ \
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            padding: 12px 0;\
+            border-bottom: 1px solid #eee;\
+        \}\
+        .status-item:last-child \{ border-bottom: none; \}\
+        .status-good \{ color: #22c55e; font-weight: bold; \}\
+        .status-bad \{ color: #ef4444; font-weight: bold; \}\
+        .status-checking \{ color: #f59e0b; font-weight: bold; \}\
+        .features \{ \
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+            gap: 20px;\
+        \}\
+        .feature \{ \
+            background: rgba(255,255,255,0.95);\
+            border-radius: 15px;\
+            padding: 25px;\
+            text-align: center;\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);\
+        \}\
+        .feature:hover \{ \
+            transform: translateY(-5px);\
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);\
+        \}\
+        .feature-icon \{ \
+            font-size: 2.5em;\
+            margin-bottom: 15px;\
+        \}\
+        .feature-title \{ \
+            color: #2563eb;\
+            font-size: 1.2em;\
+            margin-bottom: 10px;\
+            font-weight: 600;\
+        \}\
+        .feature-desc \{ \
+            color: #666;\
+            line-height: 1.5;\
+        \}\
+        .live-indicator \{\
+            background: #22c55e;\
+            color: white;\
+            padding: 8px 16px;\
+            border-radius: 20px;\
+            font-size: 0.9em;\
+            margin-top: 10px;\
+            display: inline-block;\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <div class="container">\
+        <div class="header">\
+            <div class="logo">\uc0\u55357 \u56960  SiftPilot</div>\
+            <div class="tagline">Automate Your Inbox, Simplify Your Life</div>\
+            <div class="live-indicator">\uc0\u55356 \u57104  LIVE ON AZURE</div>\
+        </div>\
+        \
+        <div class="status-card">\
+            <div class="status-title">\
+                <span>\uc0\u9889 </span>\
+                System Status\
+            </div>\
+            <div class="status-item">\
+                <span>\uc0\u55356 \u57104  Frontend Application</span>\
+                <span class="status-good">\uc0\u9989  Running</span>\
+            </div>\
+            <div class="status-item">\
+                <span>\uc0\u55357 \u56615  Backend API</span>\
+                <span id="backend-status" class="status-good">\uc0\u9989  Connected</span>\
+            </div>\
+            <div class="status-item">\
+                <span>\uc0\u55357 \u56510  Database</span>\
+                <span class="status-checking">\uc0\u55357 \u56580  Ready for setup</span>\
+            </div>\
+        </div>\
+        \
+        <div class="features">\
+            <div class="feature">\
+                <div class="feature-icon">\uc0\u55357 \u56551 </div>\
+                <div class="feature-title">Smart Email Processing</div>\
+                <div class="feature-desc">\
+                    Automatically categorize, filter, and process your emails with intelligent rules and AI assistance.\
+                </div>\
+            </div>\
+            <div class="feature">\
+                <div class="feature-icon">\uc0\u55357 \u56744 \u65039 </div>\
+                <div class="feature-title">PrintNode Integration</div>\
+                <div class="feature-desc">\
+                    Seamlessly print documents and attachments to any printer in your network.\
+                </div>\
+            </div>\
+            <div class="feature">\
+                <div class="feature-icon">\uc0\u55357 \u56592 </div>\
+                <div class="feature-title">OAuth Authentication</div>\
+                <div class="feature-desc">\
+                    Secure login with Google and Microsoft accounts. Your data stays private and protected.\
+                </div>\
+            </div>\
+            <div class="feature">\
+                <div class="feature-icon">\uc0\u9889 </div>\
+                <div class="feature-title">Real-time Processing</div>\
+                <div class="feature-desc">\
+                    Process emails as they arrive with lightning-fast automation and instant notifications.\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+    \
+    <script>\
+        console.log('\uc0\u55357 \u56960  SiftPilot Live on Azure!');\
+        \
+        // Test backend connection\
+        fetch('/health')\
+            .then(response => response.json())\
+            .then(data => \{\
+                console.log('\uc0\u9989  Backend connected:', data);\
+            \})\
+            .catch(error => \{\
+                console.log('\uc0\u10060  Backend error:', error);\
+                document.getElementById('backend-status').innerHTML = '<span class="status-bad">\uc0\u10060  Error</span>';\
+            \});\
+    </script>\
+</body>\
+</html>}

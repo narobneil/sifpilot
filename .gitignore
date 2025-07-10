@@ -1,0 +1,9 @@
+node_modules/
+.env.local
+.env.production
+deploy/
+siftpilot-production.zip
+*.log
+.DS_Store
+backup/
+Landing-page.html..rtf
